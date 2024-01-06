@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--VeryLightGray);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+  /* margin-top: 60px; */
+}
+.container {
+  display: flex;
+  width: 1440px;
+  height: 1000px;
+  position: relative;
+}
+.header {
+  /* padding-top: 60px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+.header header {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+header:nth-child(1) {
+  font-weight: 400;
+}
+header:nth-child(2) {
+  font-weight: 900;
+}
+.header p {
+  font-size: 14px;
+  color: var(--GrayishBlue);
+}
+.container .box {
+  width: 280px;
+  height: 160px;
+  padding: 30px;
+  background-color: white;
+  margin: 10px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 3px 3px 28px 1px var(--GrayishBlue);
+}
+.container header {
+  font-weight: 400;
+}
+.container p {
+  font-size: 12px;
+  padding-right: 40px;
+  color: var(--GrayishBlue);
+}
+.container img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.box header {
+  font-size: 18px;
+}
+.box:nth-child(1) {
+  border-top: 3px solid var(--Red);
+  position: absolute;
+  top: 4%;
+  left: 37%;
+}
+.box:nth-child(2) {
+  border-top: 3px solid var(--Cyan);
+  position: absolute;
+  top: 30%;
+  left: 12%;
+}
+.box:nth-child(3) {
+  border-top: 3px solid var(--Orange);
+  position: absolute;
+  top: 47%;
+  left: 37%;
+}
+.box:nth-child(4) {
+  border-top: 3px solid var(--Blue);
+  position: absolute;
+  top: 30%;
+  right: 13%;
+}
